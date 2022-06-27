@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Managmentt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-------(start-main-project)-------->
+  <section class="project">
+    <div class="container">
+      <div class="navbar">
+        <ul class="nav btn-head " id="btn-head">
+          <li class="NavItem"> <button class="nav-btn active">Employee List</button></li>
+          <li class="NavItem"> <button class="nav-btn">Add Employee</button> </li>
+        </ul>
+      </div>
+      <!-------(end-main-project)-------->
+
+      <!-------(start-main-content)-------->
+      <div class="resTable" id="myTabContent">
+        <div class="ContentProject fade show active">
+          <div class="T-Head">
+            <h2>Employee List</h2>
+
+            <table class="table Emp-Table">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody class="table-data"></tbody>
+            </table>
+            <!-------(my-result)-------->
+            <div class="ResultTable"></div>
+            <!-------(my-result)-------->
+          </div>
+        </div>
+        
+        <div class="ContentProject fade">
+          <!-------(start my form for Add)-------->
+          <form class="Add_Emp">
+            <h2>Create Employee</h2>
+            <div class="content-inp">
+              <div class="from-item">
+                <label for="formFile" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Ramesh" required />
+              </div>
+
+              <div class="from-item">
+                <label for="formFile" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Fadatare" required />
+              </div>
+
+              <div class="from-item">
+                <label for="formFile" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="ramesh@gmail.com" required />
+              </div>
+              <div class="btn_sub">
+                <button class="btn btn-success">Submit</button>
+
+              </div>
+            </div>
+
+          </form>
+        <!-------(end my form for Add)-------->
+
+
+          <!-------(start my form for update)-------->
+          <form class="update_Emp hide-show">
+            <h2>Update Employee</h2>
+
+            <div class="content-inp">
+              <input type="hidden" id="userID" />
+
+              <div class="from-item">
+                <label for="formFile" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Ramesh" required />
+              </div>
+
+              <div class="from-item">
+                <label for="formFile" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Fadatare" required />
+              </div>
+
+              <div class="from-item">
+                <label for="formFile" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="ramesh@gmail.com" required />
+              </div>
+              <div class="btn_sub">
+                <button class="btn btn-success">Submit</button>
+              </div>
+            </div>
+
+          </form>
+          <!-------(end  my form for update)-------->
+
+        </div>
+      </div>
+      <!-------(end-main-content)-------->
+    </div>
+
+  </section>
+
+
+  <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

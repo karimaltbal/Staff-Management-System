@@ -1,0 +1,275 @@
+* {  margin: 0;  padding: 0;}
+
+body {  
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  background-image: url("../image/bg_4.jpg");
+}
+
+
+
+/**********************************(main-classes)*******************************************/
+
+
+label { display: block;}
+h2 {  padding: 20px; color: #000;}
+.hide-show { display: none !important;}
+.form-label {  width: 20%;  line-height: 40px;}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+.form-control {
+  outline: none;
+  display: block;
+  width: 80%;
+  padding: 0.675rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #d9e2ff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-bottom: 1px solid #2358bd;
+
+}
+
+
+/***********************(project-body)***************************************/
+
+.project .container{ 
+  margin-top: 3rem !important; 
+  margin-bottom: 3rem !important;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+            /***********(navbar)**************/
+.navbar{border-bottom: 2px solid #356da5;     margin-bottom: 20px;}
+.project .btn-head .NavItem.show .nav-btn,
+.project .btn-head .nav-btn.active { 
+  color: #fff; font-weight: bold;    
+   background-color: #211e60;
+   border-radius: 0;
+
+}
+
+.project .nav {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  padding: 5px;
+  margin-bottom: 10px;
+
+}
+.project .nav li{
+  border: 1px solid black;
+  margin: auto;
+}
+.project .nav li button{ cursor: pointer;}
+
+.project .btn-head .nav-btn {
+  margin-bottom: -1px;
+  background: 0 0;
+  border: 1px solid #888888;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #888888;
+  font-weight: bold;
+}
+
+.project .nav-btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out;
+}
+
+
+
+
+/***********(style for table Employee)**************/
+
+.project .T-Head {
+  overflow-x: auto;
+}
+.project .T-Head  h2{     
+  margin-bottom: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+    position: relative;
+}
+.project .T-Head  h2::before{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+.project .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+.project .table > thead { 
+  vertical-align: bottom;
+    background: #211e60;
+    text-align: center;
+    color: white;
+}
+
+.project tbody, td, tfoot, th, thead, tr{
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-bottom: 1px solid #cccccc;
+
+}
+
+.sub-color{ background: #E8EBF8 !important;}
+
+.project .table > :not(caption) > * > * {
+  padding: 0.9rem 0.9rem;
+  line-height: 30px;
+  background-color: var(--bs-table-bg);
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+
+.project th{  text-align: inherit;  text-align: -webkit-match-parent;}
+
+
+.project .table > tbody { 
+  vertical-align: inherit;
+  background: white;
+  text-align: center;
+  box-shadow: 1px 3px 6px #00000096;
+}
+.project .table tbody .btn-danger { color: #fff; background-color: #ff0018; border-color: #ff0c23;}
+.project .table tbody .btn-info {  color: rgb(255, 255, 255); background-color: #0c0956; border-color: #0c0956;}
+
+
+
+
+
+/*****************(style for my form)**************/    
+.project .resTable .ContentProject { display: none;}
+.project .resTable .ContentProject.active.show {  display: block; padding-bottom: 50px;}
+.project .resTable .ContentProject .Add_Emp h2{  
+  margin-bottom: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+  position: relative;
+}
+.project .resTable .ContentProject .Add_Emp h2::before{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+.project .resTable form{
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+
+.project .resTable .content-inp{
+  background: white;
+  box-shadow: 0px 1px 16px 2px #0000006b;
+  padding: 35px 25px;
+  border-radius: 10px;
+} 
+
+.project .resTable .content-inp .from-item{  display: flex; margin-bottom: 1rem !important;}
+.project .resTable .content-inp .btn_sub{ text-align: center; padding: 20px 0 0;}
+.project .resTable .content-inp button{
+  padding: 10px 30px;
+  color: #fff; background-color: #293BF4; border-color: #293BF4;
+}
+
+
+.project .resTable .ContentProject .update_Emp h2{  
+  margin-bottom: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+  position: relative;
+}
+.project .resTable .ContentProject .update_Emp h2::before{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+}
+/****************(Responsive for my project)****************/  
+@media (min-width: 576px) { .container{  max-width: 540px;}}
+@media (min-width: 768px) {.container{ max-width: 720px;}}
+@media (min-width: 992px) { .container{  max-width: 960px; }}
+@media (min-width: 1200px) { .container{ max-width: 1140px;}}
+@media (min-width: 1400px) { .container{  max-width: 1320px;}}
+@media (min-width: 1200px) {  .h2, h2 { font-size: 2rem; }}
